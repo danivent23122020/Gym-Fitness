@@ -717,51 +717,6 @@ footer {
     }
 }
 
-/*=== setting scroll to top ===*/
-/* btn scrollup */
-.btn-scrollup {
-    width: 60px;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1000;
-    transition: all 0.5s ease-in-out;
-}
-.icone {
-    width: 60px;
-}
-.btn-scrollup.active {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease-in-out;
-}
-/* responsive scrollup */
-@media screen and (max-width: 550px) {
-    .btn-scrollup {
-        width: 50px;
-        height: 50px;
-    }
-    .icone {
-        width: 45px;
-    }
-    .btn-scrollup.active {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
 /* ====== Footer ======= */
 .footer {
     width: 100%;
@@ -792,6 +747,39 @@ footer p a {
         width: 70%;
         padding: 20px;
     }
+}
+
+/**** Scroll top ****/
+.scrolltop {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    color: black;
+    background: #fff;
+    border-radius: 0.4rem;
+    z-index: 100;
+    transition: 0.4s;
+    visibility: hidden;
+    text-decoration: none;
+}
+
+.scrolltop:hover {
+    color: #fff;
+    background-color: #000000b0;
+    transition: 0.4s;
+}
+
+.scrolltop__icon {
+    font-size: 50px;
+}
+
+/* Show scrolltop */
+.active {
+    visibility: visible;
 }
 
 /* === section cookie === */

@@ -11,11 +11,11 @@ window.addEventListener("scroll", () => {
 // *** scroll to top ***
 //display btn
 window.addEventListener("scroll", function () {
-    let scroll = this.document.querySelector(".btn-scrollup");
+    let scroll = this.document.querySelector(".scrolltop");
     scroll.classList.toggle("active", window.scrollY > 200);
 });
 // scroll to top
-const btn = document.querySelector(".btn-scrollup");
+const btn = document.querySelector(".scrolltop");
 btn.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
